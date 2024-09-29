@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #000000;
+    --second-bg-color: #151515;
+    --text-color: white;
+    --main-color: #04fffb;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/29/09/49/abstract-1780252_640.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-custom {
+    width: 300px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 20px;
+    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+
+.banner-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+.button-wrapper {
+    margin-top: 15px;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background: transparent;
+    color: rgba(0, 212, 255, 0.9);
+    border: 1px solid rgba(0, 212, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-fill {
+    background: rgba(0, 212, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
+    transition: all 0.3s ease;
+}
+
+.btn-fill:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
+}
+
+.card-custom > *{
+    font-size: medium;
+}
