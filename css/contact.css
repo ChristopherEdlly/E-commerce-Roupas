@@ -36,6 +36,10 @@ body {
     background-position: center;
 }
 
+span{
+    color: var(--main-color);
+}
+
 .contact {
     display: flex;
     flex-direction: row;
